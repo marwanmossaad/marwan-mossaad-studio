@@ -162,8 +162,12 @@
   /* CONTACT */
   .contact{background:var(--bg-soft);border:1px solid var(--line);border-radius:28px;padding:clamp(40px,6vw,70px);text-align:center}
   .contact h2{font-size:clamp(2.2rem,6vw,4rem);margin-bottom:20px}
-  .contact .mail{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--accent);display:inline-block;margin:8px 0 30px;border-bottom:2px solid transparent;transition:border-color .2s}
+  .contact .mail{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(1.4rem,4vw,2.2rem);color:var(--accent);display:inline-block;max-width:100%;overflow-wrap:break-word;word-break:break-word;margin:8px 0 30px;border-bottom:2px solid transparent;transition:border-color .2s}
   .contact .mail:hover{border-color:var(--accent)}
+  @media(max-width:480px){
+    .contact{padding:38px 22px}
+    .contact .mail{font-size:clamp(1rem,5vw,1.6rem)}
+  }
   .details{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;color:var(--muted);margin-top:10px}
 
   footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.9rem}
