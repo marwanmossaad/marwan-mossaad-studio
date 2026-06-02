@@ -49,6 +49,8 @@
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
   .logo{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.25rem;letter-spacing:-.03em;display:flex;align-items:center;gap:.5rem}
   .logo .dot{width:11px;height:11px;background:var(--accent);border-radius:50%;display:inline-block}
+  a.logo{transition:opacity .2s}
+  a.logo:hover{opacity:.82}
   .nav-links{display:flex;gap:30px;align-items:center;font-size:.95rem;color:var(--muted)}
   .nav-links a{transition:color .2s}
   .nav-links a:hover{color:var(--ink)}
@@ -186,7 +188,7 @@
 
 <nav>
   <div class="wrap nav-in">
-    <div class="logo"><span class="dot"></span>Marwan&nbsp;Mossaad&nbsp;Studio</div>
+    <a class="logo" href="/" aria-label="Marwan Mossaad Studio — home"><span class="dot"></span>Marwan&nbsp;Mossaad&nbsp;Studio</a>
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#process">Process</a>
@@ -305,7 +307,7 @@
     <div class="reveal">
       <div class="eyebrow">Selected work</div>
       <h2 class="sec">Work.</h2>
-      <p class="sec-sub">A growing portfolio of sites and products. Stay tuned for the updates!</p>
+      <p class="sec-sub">A growing portfolio of sites and products. Click through to see them live.</p>
     </div>
     <div class="work-grid">
       <div class="proj proj-soon reveal">
@@ -372,7 +374,7 @@
 
 <footer>
   <div class="wrap foot-in">
-    <div class="logo"><span class="dot"></span>Marwan&nbsp;Mossaad&nbsp;Studio</div>
+    <a class="logo" href="/" aria-label="Marwan Mossaad Studio — home"><span class="dot"></span>Marwan&nbsp;Mossaad&nbsp;Studio</a>
     <small>© 2026 Marwan Mossaad Studio. All rights reserved.</small>
   </div>
 </footer>
